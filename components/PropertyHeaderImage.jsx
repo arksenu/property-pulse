@@ -1,8 +1,8 @@
-
-import Image from "next/image"
+import Image from "next/image";
 
 const PropertyHeaderImage = ({ image }) => {
-  if (!image) return null
+  if (!image) return null;
+
   return (
     <section>
       <div className="container-xl m-auto">
@@ -11,15 +11,15 @@ const PropertyHeaderImage = ({ image }) => {
             src={`/images/properties/${image}`}
             alt="Property"
             className="object-cover h-[400px] w-full"
-            width={1200}
-            height={400}
-            sizes='100vw'
+            width={0}
+            height={0}
+            sizes="100vw"
             priority={true}
           />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PropertyHeaderImage
+export default PropertyHeaderImage;
